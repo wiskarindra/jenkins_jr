@@ -1,0 +1,26 @@
+# compiled object files, static and dynamic libs (shared objects)
+*.o
+*.a
+*.so
+
+# env
+.env*
+
+# test coverage result
+*.out
+*.html
+
+# project deploy/_output
+deploy/_output
+
+# service binary
+/jenkins_jr
+
+# test-migration binary
+/test-migration
+
+# jetbrains
+.idea
+
+# app/playground folder
+app/playground

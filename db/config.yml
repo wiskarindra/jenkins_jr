@@ -1,0 +1,18 @@
+development: &development
+  adapter: mysql2
+  database: <%= ENV['DATABASE_NAME'] || 'default_db_name' %>
+  host: <%= ENV['DATABASE_HOST'] || '127.0.0.1' %>
+  pool: <%= ENV['DATABASE_POOL'] || 5 %>
+  username: <%= ENV['DATABASE_USERNAME'] || 'root' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || '' %>
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: <%= ENV['DATABASE_NAME'] || 'production db_name' %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] || 3306 %>
+  pool: <%= ENV['DATABASE_POOL'] || 50 %>
+  username: <%= ENV['DATABASE_USERNAME'] || 'username' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || 'password' %>

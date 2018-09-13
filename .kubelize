@@ -1,0 +1,34 @@
+templateVersion: v2.2.0
+projectName: jenkins_jr
+services:
+- name: web
+  port: "7010"
+  environments:
+  - name: production
+    replica: "2"
+  - name: sandbox
+    replica: "1"
+  - name: staging
+    replica: "1"
+  nodePort: "37010"
+  healthz: healthz
+  maxMem: "2"
+  maxCpu: "2"
+  minMem: "0.5"
+  minCpu: "1"
+  limit: false
+  timeout: "1"
+  delay: "30"
+  language: go
+  consul: envconsul
+- name: tag-url-manager-cronjob
+  environments:
+  - name: production
+  - name: staging
+  maxMem: "2"
+  maxCpu: "2"
+  minMem: "0.5"
+  minCpu: "1"
+  limit: false
+  language: go
+  consul: envconsul
