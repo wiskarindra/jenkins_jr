@@ -8,7 +8,6 @@ import (
 	"strconv"
 	"time"
 
-	plog "github.com/bukalapak/packen/log"
 	"github.com/wiskarindra/jenkins_jr/pkg/currentuser"
 	"github.com/wiskarindra/jenkins_jr/pkg/resource"
 )

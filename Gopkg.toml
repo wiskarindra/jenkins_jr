@@ -49,10 +49,6 @@
   unused-packages = true
 
 [[constraint]]
-  name = "github.com/gorilla/mux"
-  version = "1.6.2"
-
-[[constraint]]
   name = "github.com/tucnak/telebot"
   branch = "v2"
 

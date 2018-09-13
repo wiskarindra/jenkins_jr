@@ -8,7 +8,6 @@ import (
 	"github.com/wiskarindra/jenkins_jr/pkg/mysql"
 	"github.com/wiskarindra/jenkins_jr/pkg/jenkins_jr"
 
-	"github.com/bukalapak/packen/instrument"
 	"github.com/rs/cors"
 	"github.com/subosito/gotenv"
 )
