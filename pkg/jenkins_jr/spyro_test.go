@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bukalapak/jenkins_jr/pkg/currentuser"
-	"github.com/bukalapak/jenkins_jr/pkg/mysql"
-	"github.com/bukalapak/jenkins_jr/pkg/resource"
+	"github.com/wiskarindra/jenkins_jr/pkg/currentuser"
+	"github.com/wiskarindra/jenkins_jr/pkg/mysql"
+	"github.com/wiskarindra/jenkins_jr/pkg/resource"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 	"github.com/subosito/gotenv"
@@ -24,7 +24,7 @@ var jwtTokens = map[string]string{
 }
 
 func init() {
-	gotenv.MustLoad(os.Getenv("GOPATH") + "/src/github.com/bukalapak/jenkins_jr/.env")
+	gotenv.MustLoad(os.Getenv("GOPATH") + "/src/github.com/wiskarindra/jenkins_jr/.env")
 	os.Setenv("ENV", "test")
 }
 

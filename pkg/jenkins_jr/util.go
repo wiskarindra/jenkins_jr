@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bukalapak/jenkins_jr/config"
-	"github.com/bukalapak/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/config"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
 )
 
 func getLimitOffsetFromURLQuery(uq url.Values) (uint64, uint64) {

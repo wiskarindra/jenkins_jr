@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/bukalapak/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
 )
 
 // PostTagEntity represents post_tags entity.

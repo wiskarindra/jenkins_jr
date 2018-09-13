@@ -1,6 +1,6 @@
 .PHONY: all test dep compile build push checkenv deploy kubefile setup migrate
 
-IMAGE = registry.bukalapak.io/bukalapak/jenkins_jr/$(svc)
+IMAGE = registry.bukalapak.io/wiskarindra/jenkins_jr/$(svc)
 DIRS  = $(shell cd deploy && ls -d */ | grep -v "_output")
 FILE ?= deployment
 ODIR := deploy/_output

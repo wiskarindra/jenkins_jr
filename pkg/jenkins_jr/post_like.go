@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/bukalapak/apinizer/response"
-	"github.com/bukalapak/jenkins_jr/pkg/api"
-	"github.com/bukalapak/jenkins_jr/pkg/currentuser"
-	"github.com/bukalapak/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/pkg/api"
+	"github.com/wiskarindra/jenkins_jr/pkg/currentuser"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
 )
 
 // PostLikeEntity represents post_likes entity.

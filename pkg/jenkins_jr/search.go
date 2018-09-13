@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bukalapak/jenkins_jr/config"
-	"github.com/bukalapak/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/config"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
 )
 
 // PostSearchForm represents search form.

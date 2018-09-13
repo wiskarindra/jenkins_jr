@@ -9,8 +9,8 @@ import (
 	"time"
 
 	plog "github.com/bukalapak/packen/log"
-	"github.com/bukalapak/jenkins_jr/pkg/currentuser"
-	"github.com/bukalapak/jenkins_jr/pkg/resource"
+	"github.com/wiskarindra/jenkins_jr/pkg/currentuser"
+	"github.com/wiskarindra/jenkins_jr/pkg/resource"
 )
 
 // DevLog logs only on development or staging

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bukalapak/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
 )
 
 type PostFilterForm struct {

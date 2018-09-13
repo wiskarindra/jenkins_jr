@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/bukalapak/apinizer/response"
-	"github.com/bukalapak/jenkins_jr/pkg/api"
+	"github.com/wiskarindra/jenkins_jr/pkg/api"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -87,7 +87,7 @@ func TestCreate(t *testing.T) {
 	env := newEnvTest()
 	defer clearDBTestData(env.DB)
 
-	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/bukalapak/jenkins_jr/testdata/request/post.json")
+	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/wiskarindra/jenkins_jr/testdata/request/post.json")
 	assert.Equal(t, nil, err)
 	w, r := newRequestTest(reqBody, "jwt-valid")
 
@@ -165,7 +165,7 @@ func TestUpdate(t *testing.T) {
 	row, _ := env.DB.Exec("INSERT INTO posts (title, description, influencer_name, published, like_count, created_at, updated_at) VALUES ('Published Post', 'Test Description' , 'Tester', 1, 10, NOW(), NOW())")
 	postID, _ := row.LastInsertId()
 
-	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/bukalapak/jenkins_jr/testdata/request/post.json")
+	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/wiskarindra/jenkins_jr/testdata/request/post.json")
 	assert.Equal(t, nil, err)
 	w, r := newRequestTest(reqBody, "jwt-valid")
 	r = api.SetParams(r, map[string]string{"id": fmt.Sprintf("%d", postID)})
@@ -234,7 +234,7 @@ func TestUpdateCategories(t *testing.T) {
 	row, _ := env.DB.Exec(query, "Published Post", "Test Description", "Tester", 1, 10)
 	postID, _ := row.LastInsertId()
 
-	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/bukalapak/jenkins_jr/testdata/request/post.json")
+	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/wiskarindra/jenkins_jr/testdata/request/post.json")
 	assert.Equal(t, nil, err)
 	w, r := newRequestTest(reqBody, "jwt-valid")
 	r = api.SetParams(r, map[string]string{"id": fmt.Sprintf("%d", postID)})
@@ -254,7 +254,7 @@ func TestUpdateCategories(t *testing.T) {
 	assert.Equal(t, int64(32), filters[0].BukalapakCategoryID)
 
 	// Another request
-	reqBody, err = ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/bukalapak/jenkins_jr/testdata/request/post2.json")
+	reqBody, err = ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/wiskarindra/jenkins_jr/testdata/request/post2.json")
 	assert.Equal(t, nil, err)
 	w, r = newRequestTest(reqBody, "jwt-valid")
 	r = api.SetParams(r, map[string]string{"id": fmt.Sprintf("%d", postID)})
@@ -280,7 +280,7 @@ func TestDelete(t *testing.T) {
 	defer clearDBTestData(env.DB)
 
 	// Before Deletion
-	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/bukalapak/jenkins_jr/testdata/request/post.json")
+	reqBody, err := ioutil.ReadFile(os.Getenv("GOPATH") + "/src/github.com/wiskarindra/jenkins_jr/testdata/request/post.json")
 	assert.Equal(t, nil, err)
 
 	w, r := newRequestTest(reqBody, "jwt-valid")

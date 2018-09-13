@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/bukalapak/apinizer/response"
-	"github.com/bukalapak/jenkins_jr/pkg/api"
+	"github.com/wiskarindra/jenkins_jr/pkg/api"
 )
 
 // SelectedPosts sends as response posts to put in selected posts section.

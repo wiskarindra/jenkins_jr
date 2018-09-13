@@ -3,10 +3,10 @@ package main
 import (
 	"net/http"
 
-	"github.com/bukalapak/jenkins_jr/pkg/api"
-	"github.com/bukalapak/jenkins_jr/pkg/log"
-	"github.com/bukalapak/jenkins_jr/pkg/mysql"
-	"github.com/bukalapak/jenkins_jr/pkg/jenkins_jr"
+	"github.com/wiskarindra/jenkins_jr/pkg/api"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/pkg/mysql"
+	"github.com/wiskarindra/jenkins_jr/pkg/jenkins_jr"
 
 	"github.com/bukalapak/packen/instrument"
 	"github.com/rs/cors"

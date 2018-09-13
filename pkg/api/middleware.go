@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/bukalapak/jenkins_jr/pkg/currentuser"
-	"github.com/bukalapak/jenkins_jr/pkg/log"
-	"github.com/bukalapak/jenkins_jr/pkg/resource"
+	"github.com/wiskarindra/jenkins_jr/pkg/currentuser"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/pkg/resource"
 
 	"github.com/bukalapak/apinizer/response"
 	"github.com/bukalapak/packen/instrument"

@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/bukalapak/apinizer/response"
-	"github.com/bukalapak/jenkins_jr/config"
-	"github.com/bukalapak/jenkins_jr/pkg/api"
-	"github.com/bukalapak/jenkins_jr/pkg/currentuser"
-	"github.com/bukalapak/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/config"
+	"github.com/wiskarindra/jenkins_jr/pkg/api"
+	"github.com/wiskarindra/jenkins_jr/pkg/currentuser"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
 )
 
 // HistoryEntity represents histories entity.

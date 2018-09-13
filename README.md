@@ -68,13 +68,13 @@ See [WOW Squad Members](https://bukalapak.atlassian.net/wiki/spaces/WOW/overview
   If you don't have directory `src`, `github.com`, or `bukalapak` in your GOPATH, please make them.
 
   ```sh
-  git clone git@github.com:bukalapak/jenkins_jr.git
+  git clone git@github.com:wiskarindra/jenkins_jr.git
   ```
 
 - Go to Spyro directory, then sync the vendor file
 
   ```sh
-  cd $GOPATH/src/github.com/bukalapak/jenkins_jr
+  cd $GOPATH/src/github.com/wiskarindra/jenkins_jr
   make dep
   ```
 
@@ -106,7 +106,7 @@ See [WOW Squad Members](https://bukalapak.atlassian.net/wiki/spaces/WOW/overview
 
 ### Request Flow
 
-Stated in [Architecture Diagram](https://github.com/bukalapak/jenkins_jr#architecture-diagram)
+Stated in [Architecture Diagram](https://github.com/wiskarindra/jenkins_jr#architecture-diagram)
 
 ### Enpoints
 [General](https://blueprint.bukalapak.io/#inspirations) | [Exclusive](https://blueprint.bukalapak.io/exclusive.html#inspirations)
@@ -124,4 +124,4 @@ Gagal nih pas jalanin `make setup`. Kenapa ya?
 > Punya VPN buat akses datacenter Bukalapak? Coba nyalain dulu.
 
 Masih gagal juga. Kenapa ya?
->Mac user? Coba ganti di `.env` nya bagian `DATABASE_HOST` sama `DATABASE_TEST_HOST` jadi `docker.for.mac.localhost`. Kalau masih gagal juga, atau bukan mac user coba hubungi salah satu dari [on-call person](https://github.com/bukalapak/jenkins_jr#contact-and-on-call-information)
+>Mac user? Coba ganti di `.env` nya bagian `DATABASE_HOST` sama `DATABASE_TEST_HOST` jadi `docker.for.mac.localhost`. Kalau masih gagal juga, atau bukan mac user coba hubungi salah satu dari [on-call person](https://github.com/wiskarindra/jenkins_jr#contact-and-on-call-information)

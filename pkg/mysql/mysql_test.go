@@ -8,11 +8,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/subosito/gotenv"
 
-	"github.com/bukalapak/jenkins_jr/pkg/mysql"
+	"github.com/wiskarindra/jenkins_jr/pkg/mysql"
 )
 
 func init() {
-	gotenv.MustLoad(os.Getenv("GOPATH") + "/src/github.com/bukalapak/jenkins_jr/.env")
+	gotenv.MustLoad(os.Getenv("GOPATH") + "/src/github.com/wiskarindra/jenkins_jr/.env")
 	os.Setenv("ENV", "test")
 	os.Setenv("DATABASE_NAME", os.Getenv("DATABASE_TEST_NAME"))
 	os.Setenv("DATABASE_PORT", os.Getenv("DATABASE_TEST_PORT"))

@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/bukalapak/apinizer/response"
-	"github.com/bukalapak/jenkins_jr/pkg/log"
+	"github.com/wiskarindra/jenkins_jr/pkg/log"
 	"github.com/jmoiron/sqlx"
 )
 
